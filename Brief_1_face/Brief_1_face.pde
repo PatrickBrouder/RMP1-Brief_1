@@ -9,25 +9,27 @@ void setup() {
 
 void draw() {
   background(255);
-  myFace.paint();
+  myFace.paint(mouseX,mouseY);//pass in x and y position of mouse to draw new face
 }
 
 
 
 class Face {
 
-  void paint() {
+  void paint(int x, int y) {
     //set fill color for face
     fill(0,0,255);
     
-    //main face
-    ellipse(50, 50, 100, 100);
+    //main face, drawn at x & y position of mouse
+    ellipse(x, y, 100, 100);
     //set no fill for the arc that will be the mouth
     noFill();
-    arc(50, 50, 50, 50, 0, PI);
+    //arc drawn at x & y position of mouse
+    arc(x, y, 50, 50, 0, PI);
     //fill color and the two eyes
     fill(0);
-    ellipse(30, 30, 10, 10);
-    ellipse(70, 30, 10, 10);
+    // both eyes have values added/subtracted from the x and y position of the mouse to position them correctly
+    ellipse(x-20, y-20, 10, 10);
+    ellipse(x+20, y-20, 10, 10);
   }
 }
