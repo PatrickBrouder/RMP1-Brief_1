@@ -12,8 +12,8 @@ void setup() {
     float c= random(0, 255);
     float c2= random(0, 255);
     float c3= random(0, 255);
-    float x= random(0, 600);
-    float y= random(0, 600);
+    float x= random(25, 575);
+    float y= random(25, 575);
     int radius = int(r);
     int colour = int(c);
     int colour2 = int(c2);
