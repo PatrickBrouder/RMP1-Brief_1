@@ -7,9 +7,9 @@ class Face {
     //main face, drawn at x & y position of mouse
     ellipse(x, y, 100, 100);
     //set no fill for the arc that will be the mouth
-    noFill();
+    fill(255);
     //arc drawn at x & y position of mouse
-    arc(x, y, 50, 50, 0, PI);
+    arc(x, y, 50, 50, 0, PI, CHORD);
     strokeWeight(5);
     //fill color and the two eyes
     fill(255);
