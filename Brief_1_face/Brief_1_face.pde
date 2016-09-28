@@ -36,13 +36,15 @@ void draw() {
     fill(myCircles[i][3], myCircles[i][4], myCircles[i][5]);
     ellipse(myCircles[i][0], myCircles[i][1], myCircles[i][2], myCircles[i][2]);
   }
+  
+  
 }
 
 void keyPressed(){
   if (key == CODED) {
     if (keyCode == UP) {
       for(int i=0; i<myCircles.length; i++){
-         myCircles[i][1] -= 5;
+         myCircles[i][1] -= 5;        
       }
     } else if (keyCode == DOWN) {
       for(int i=0; i<myCircles.length; i++){
