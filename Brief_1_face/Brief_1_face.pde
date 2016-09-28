@@ -8,18 +8,13 @@ void setup() {
   background(255);
   myFace = new Face();
   for(int i=0; i<myCircles.length; i++){ 
-    float r= random(10, 50);
-    float c= random(0, 255);
-    float c2= random(0, 255);
-    float c3= random(0, 255);
-    float x= random(25, 575);
-    float y= random(25, 575);
-    int radius = int(r);
-    int colour = int(c);
-    int colour2 = int(c2);
-    int colour3 = int(c3);
-    int xpos = int(x);
-    int ypos = int(y);
+    int radius= int(random(10, 50));
+    int colour= int(random(0, 255));
+    int colour2= int(random(0, 255));
+    int colour3= int(random(0, 255));
+    int xpos= int(random(25, 575));
+    int ypos= int(random(25, 575));
+    
     myCircles[i][0] =  xpos;
     myCircles[i][1] =  ypos;
     myCircles[i][2] =  radius;
