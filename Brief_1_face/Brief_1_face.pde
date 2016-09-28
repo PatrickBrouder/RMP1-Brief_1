@@ -1,6 +1,6 @@
 
 Face myFace;
-float[][] myCircles = new float[20][6];
+int[][] myCircles = new int[20][6];
 
 
 void setup() {
